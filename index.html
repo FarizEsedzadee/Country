@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌍 Gəl Gəzək!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/tailwind.config.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+</head>
+
+<body class="fun-gradient min-h-screen text-gray-800">
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md border-b-4 border-fun-300 sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-fun-400 to-fun-600 rounded-full flex items-center justify-center fun-shadow wiggle">
+                        <span class="text-3xl rounded-[50%] overflow-hidden"><img src="./assets/img/logo.png" alt="Logo"></span>
+                    </div>
+                    <div>
+                        <h1 class="text-4xl font-bold text-fun-700" style="font-family: 'Fredoka One';">Biz Hardayıq?
+                        </h1>
+                        <p class="text-fun-500 text-lg font-medium">🎉 Biri vardı, biri yoxdu? </p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#"
+                        class="text-fun-600 hover:text-fun-800 font-semibold transition-colors duration-300 hover:scale-110 transform">🏠
+                        Ana Səhifə</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 overflow-hidden relative">
+        <div class="absolute top-10 left-10 text-6xl opacity-20 float">🎈</div>
+        <div class="absolute top-20 right-20 text-4xl opacity-30 wiggle">✈️</div>
+        <div class="absolute bottom-10 left-1/4 text-5xl opacity-25 float">🗺️</div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center max-w-5xl mx-auto">
+                <h2 class="text-7xl md:text-9xl font-bold mb-6 text-fun-700" style="font-family: 'Fredoka One';">
+                    Hello
+                    <span class="bg-gradient-to-r from-fun-500 to-fun-700 bg-clip-text text-transparent">
+                        World!
+                    </span>
+                </h2>
+                <p class="text-2xl text-fun-600 mb-12 leading-relaxed font-medium">
+                    Ölkələrimizi tanıyaq?
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-16 bg-white/50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto" id="stats-container">
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="bg-white/80 backdrop-blur-md rounded-3xl p-8 fun-shadow border-2 border-fun-200">
+                <h3 class="text-4xl font-bold mb-8 text-center text-fun-700" style="font-family: 'Fredoka One';">
+                    🔍 Filtr
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Continent Filter -->
+                    <div class="space-y-3 lg:col-span-1">
+                        <label class="block text-fun-700 font-bold text-lg flex items-center">
+                            <span class="mr-2">🌎</span>
+                            Qitə Seç
+                        </label>
+                        <select id="continent-filter"
+                            class="w-full bg-fun-50 border-2 border-fun-300 rounded-2xl px-4 py-3 text-fun-800 focus:border-fun-500 focus:outline-none transition-colors font-medium">
+                            <option selected disabled value="">Hamısı</option>
+                        </select>
+                    </div>
+
+                    <!-- Search -->
+                    <div class="space-y-3 lg:col-span-2">
+                        <label class="block text-fun-700 font-bold text-lg flex items-center">
+                            <span class="mr-2">🔎</span>
+                            Arama
+                        </label>
+                        <input type="text" id="search-input" placeholder="Ölkə adı yaz..."
+                            class="w-full bg-fun-50 border-2 border-fun-300 rounded-2xl px-4 py-3 text-fun-800 placeholder-fun-500 focus:border-fun-500 focus:outline-none transition-colors font-medium">
+                    </div>
+                </div>
+
+                <div class="flex justify-center mt-8">
+                    <button id="reset-filters"
+                        class="bg-gradient-to-r from-fun-500 to-fun-600 hover:from-fun-400 hover:to-fun-500 text-white px-10 py-4 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 transform fun-shadow">
+                        🔄 Filtri Təmizlə
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countries Grid -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold text-center mb-16 text-fun-700" style="font-family: 'Fredoka One';">
+                Countries
+            </h2>
+            <div id="countries-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- ölkə -->
+            </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="text-center mt-16">
+            <button id="load-more" onclick="loadMore()"
+                class="bg-gradient-to-r from-fun-500 to-fun-600 hover:from-fun-400 hover:to-fun-500 text-white px-12 py-4 rounded-2xl font-bold text-xl transition-all duration-300 hover:scale-105 transform fun-shadow">
+                Daha Çox Göstər
+            </button>
+        </div>
+        </div>
+    </section>
+
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
