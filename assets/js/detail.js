@@ -7,9 +7,9 @@ const country = data.find(item => item.alpha3Code == alpCode);
 
 
 function printHero() {
-    heroSection.innerHTML = `<div class="absolute top-10 left-10 text-4xl opacity-30 float">🎈</div>
-        <div class="absolute top-20 right-20 text-3xl opacity-40 wiggle">✈️</div>
-        <div class="absolute bottom-10 left-1/4 text-5xl opacity-25 float">🏛️</div>
+    heroSection.innerHTML = `<div class="absolute top-10 left-10 text-4xl opacity-30 float">Sən</div>
+        <div class="absolute top-20 right-20 text-3xl opacity-40 wiggle">Bilirsən?</div>
+        <div class="absolute bottom-10 left-1/4 text-5xl opacity-25 float">Mən Kiməm</div>
         
         <div class="absolute inset-0">
             <img src="${country.flag}" alt="${country.name}" class="w-full h-full object-cover opacity-20">
