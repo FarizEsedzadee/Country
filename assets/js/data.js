@@ -870,9 +870,9 @@ const data = [
         "independent": true
     },
     {
-        "name": "Armenia",
+        "name": "Küçüybaycan",
         "topLevelDomain": [
-            ".am"
+            ".az"
         ],
         "alpha2Code": "AM",
         "alpha3Code": "ARM",
@@ -883,7 +883,7 @@ const data = [
         "altSpellings": [
             "AM",
             "Hayastan",
-            "Republic of Armenia",
+            "Republic of Azerbaijan",
             "Հայաստանի Հանրապետություն"
         ],
         "subregion": "Western Asia",
@@ -893,7 +893,7 @@ const data = [
             40,
             45
         ],
-        "demonym": "Armenian",
+        "demonym": "Küçük Balaları",
         "area": 29743,
         "gini": 29.9,
         "timezones": [
