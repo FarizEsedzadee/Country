@@ -22,7 +22,7 @@ function printHero() {
                 <h1 class="text-7xl md:text-9xl font-bold mb-6 text-fun-700" style="font-family: 'Fredoka One';">${country.name}</h1>
                 <p class="text-3xl text-fun-600 mb-8 font-semibold">🌉 ${country.subregion}</p>
                 <div class="flex flex-wrap justify-center gap-4 text-lg">
-                    <span class="bg-fun-200 text-fun-800 px-6 py-3 rounded-full font-bold hover:scale-105 transform transition-all">🏛️ Paytaxt: ${country.capital}</span>
+                    <span class="bg-fun-200 text-fun-800 px-6 py-3 rounded-full font-bold hover:scale-105 transform transition-all">🏛️ Paytaxt: ${country.capital || "Yoxdur"}</span>
                     <span class="bg-fun-200 text-fun-800 px-6 py-3 rounded-full font-bold hover:scale-105 transform transition-all">👥 Populyasiya: ${country.population.toLocaleString('de', 'DE')}</span>
                     <span class="bg-fun-200 text-fun-800 px-6 py-3 rounded-full font-bold hover:scale-105 transform transition-all">💰 Valyuta: ${country.currencies?.[0]?.symbol || "N/A"}</span>
                 </div>
@@ -31,7 +31,7 @@ function printHero() {
 }
 
 function printStats() {
-        statsSection.innerHTML = `<div class="container mx-auto px-6">
+    statsSection.innerHTML = `<div class="container mx-auto px-6">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                 <div class="stat-card rounded-3xl p-6 text-center hover:scale-105 transform transition-all">
                     <div class="text-4xl mb-3">📟</div>

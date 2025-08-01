@@ -47,7 +47,7 @@ function printCards(fillData = data) {
                             <h3 class="text-2xl font-bold mb-2 text-fun-700">${item.name}</h3>
                             <p class="text-fun-600 text-sm mb-4 font-medium">🌍 ${item.subregion} • 👥 ${item.population.toLocaleString('de', 'DE')}</p>
                             <div class="flex items-center justify-between">
-                                <span class="text-fun-500 font-semibold">🏛️ Paytaxt: ${item.capital}</span>
+                                <span class="text-fun-500 font-semibold">🏛️ Paytaxt: ${item.capital || "Yoxdur"}</span>
                                 <div class="flex space-x-1">
                                     <div class="w-2 h-2 bg-fun-400 rounded-full animate-pulse"></div>
                                     <div class="w-2 h-2 bg-fun-500 rounded-full animate-pulse" style="animation-delay: 0.2s"></div>
